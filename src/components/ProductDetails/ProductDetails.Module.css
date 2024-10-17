@@ -1,0 +1,133 @@
+.productDetails {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Grid-based layout for images */
+  .imageGallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px; /* Proper spacing between images */
+  }
+  
+  .imageWrapper {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .imageWrapper:hover {
+    transform: scale(1.05); /* Subtle hover effect */
+  }
+  
+  .productImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .detailsContainer {
+    padding: 20px;
+  }
+  
+  .productTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .productPrice {
+    font-size: 1.5rem;
+    color: #28a745;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .starIcon {
+    color: #ffc107;
+    margin-right: 5px;
+  }
+  
+  .ratingText {
+    margin-left: 10px;
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  .productDescription {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .actions {
+    margin-bottom: 30px;
+  }
+  
+  .similarProducts {
+    margin-top: 40px;
+  }
+  
+  .similarProducts h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .similarProductCard {
+    border: none;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .similarProductCard:hover {
+    transform: scale(1.05);
+  }
+  
+  .similarProductImage {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #28a745;
+  }
+  
+  @media (max-width: 768px) {
+    .detailsContainer {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  
+    .productTitle {
+      font-size: 1.75rem;
+    }
+  
+    .productPrice {
+      font-size: 1.25rem;
+    }
+  
+    .ratingText {
+      font-size: 0.8rem;
+    }
+  
+    .similarProductImage {
+      height: 150px;
+    }
+  }
+  
